@@ -172,7 +172,7 @@ const motorData = {
         },
         {
             nama: "Stylo 160",
-            image: "/images/motor/stylo/stylo-abs-1.jpeg",
+            image: "/images/motor/stylo/stylo-1.jpeg",
             harga: "33.900.000",
             spesifikasi: {
                 dimensi: "1.886 x 706 x 1.133 mm (ABS)",
