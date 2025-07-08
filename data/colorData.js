@@ -39,21 +39,23 @@ export const colorData = {
       { name: "Stylish Red", image: "/images/motor/scoopy/scoopy-3.jpeg" },
     ]
   },
-  'all-new-scoopy': {
-    name: "All New Scoopy",
-    colors: [
-      { name: "Stylish Green", image: "/images/motor/scoopy/scoopy-1.jpeg" },
-      { name: "Prestige White", image: "/images/motor/scoopy/scoopy-2.jpeg" },
-      { name: "Stylish Red", image: "/images/motor/scoopy/scoopy-3.jpeg" },
-    ]
-  },
-  'stylo': {
+
+  'stylo-160': {
     name: "Stylo 160",
     colors: [
       { name: "Stylish Green", image: "/images/motor/stylo/stylo-1.jpeg" },
       { name: "Prestige White", image: "/images/motor/stylo/stylo-2.jpeg" },
       { name: "Stylish Red", image: "/images/motor/stylo/stylo-3.jpeg" },
       { name: "Stylish Red", image: "/images/motor/stylo/stylo-4.jpeg" },
+    ]
+  },
+  'vario-160': {
+    name: "All New Vario 160",
+    colors: [
+      { name: "Grande Matte Black", image: "/images/motor/vario/vario-3.jpeg" },
+      { name: "Grande Matte White", image: "/images/motor/vario/vario-4.jpeg" },
+      { name: "Active Blue", image: "/images/motor/vario/vario-1.jpeg" },
+      { name: "Active Red", image: "/images/motor/vario/vario-2.jpeg" },
     ]
   },
   // ... data warna motor lainnya

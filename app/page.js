@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { colorData } from '@/data/colorData';
 
 export default function Home() {
   return (
@@ -33,17 +34,17 @@ export default function Home() {
           {/* Vario 160 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
             <Image
-              src="/images/motor/vario/vario-2.jpeg"
-              alt="Vario 160"
+              src={colorData['vario-160'].colors[1].image}
+              alt={colorData['vario-160'].name}
               width={600}
               height={400}
               className="w-full"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">All New Vario 160</h3>
+              <h3 className="text-2xl font-bold mb-2">{colorData['vario-160'].name}</h3>
               <p className="text-gray-600 mb-4">Tampil Gagah dengan Performa Maksimal. Nikmati sensasi berkendara dengan mesin 160cc berteknologi eSP+</p>
               <Link 
-                href="/katalog?jenis=sport#vario-160" 
+                href="/katalog/detail/vario-160" 
                 className="inline-flex items-center text-[#E11E26] hover:text-red-700"
               >
                 Lihat Detail <span className="ml-2">→</span>
@@ -54,17 +55,17 @@ export default function Home() {
           {/* ADV 160 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform">
             <Image
-              src="/images/motor/adv/adv-2.jpeg"
-              alt="ADV 160"
+              src={colorData['adv-160'].colors[1].image}
+              alt={colorData['adv-160'].name}
               width={600}
               height={400}
               className="w-full"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">Honda ADV 160</h3>
+              <h3 className="text-2xl font-bold mb-2">{colorData['adv-160'].name}</h3>
               <p className="text-gray-600 mb-4">Urban Explorer dengan DNA Petualang. Siap menaklukkan setiap tantangan di jalanan kota</p>
               <Link 
-                href="/katalog?jenis=sport#adv-160" 
+                href="/katalog/detail/adv-160"
                 className="inline-flex items-center text-[#E11E26] hover:text-red-700"
               >
                 Lihat Detail <span className="ml-2">→</span>
