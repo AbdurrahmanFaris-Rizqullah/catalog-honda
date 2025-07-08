@@ -18,7 +18,7 @@ export const colorData = {
   'pcx-160': {
     name: "PCX 160",
     colors: [
-      { name: "Phenomenal White", image: "/images/motor/adv/adv-1-abs.jpeg" },
+      { name: "Phenomenal White", image: "/images/motor/pcx/pcx-abs.jpeg" },
       { name: "Roadsync Red", image: "/images/motor/pcx/pcx-roadsync-1.jpeg" },
       { name: "Roadsync Matte Black", image: "/images/motor/pcx/pcx-roadsync-2.jpeg" },
     ]
