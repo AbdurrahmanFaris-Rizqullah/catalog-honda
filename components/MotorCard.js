@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function MotorCard({ motor }) {
   return (
@@ -26,26 +27,33 @@ export default function MotorCard({ motor }) {
           <div>
             <h4 className="font-semibold text-[#E11E26]">Spesifikasi Utama</h4>
             <ul className="text-sm text-gray-600 mt-2 space-y-1">
+              <li>• Dimensi: {motor.spesifikasi.dimensi}</li>
+              <li>• Berat Kosong: {motor.spesifikasi.beratKosong}</li>
+              <li>• Kapasitas Tangki: {motor.spesifikasi.kapasitasTangki}</li>
               <li>• Mesin: {motor.spesifikasi.mesin}</li>
               <li>• Volume: {motor.spesifikasi.volume}</li>
               <li>• Transmisi: {motor.spesifikasi.transmisi}</li>
+              <li>• Ban Depan: {motor.spesifikasi.banDepan}</li>
+              <li>• Ban Belakang: {motor.spesifikasi.banBelakang}</li>
+              <li>• Rangka: {motor.spesifikasi.rangka}</li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold text-[#E11E26]">Fitur Unggulan</h4>
             <ul className="text-sm text-gray-600 mt-2 space-y-1">
-              {motor.fiturUtama.map((fitur, idx) => (
-                <li key={idx}>• {fitur}</li>
+              {motor.fiturUtama.map((fitur, index) => (
+                <li key={index}>• {fitur}</li>
               ))}
             </ul>
           </div>
 
-          <button 
-            className="w-full bg-[#E11E26] text-white py-2 rounded-md hover:bg-red-700 transition-colors mt-4"
+          <Link 
+            href={`/katalog/detail/${motor.nama.toLowerCase().replace(/\s+/g, '-')}`}
+            className="block w-full bg-[#E11E26] text-white text-center py-2 rounded-md hover:bg-red-700 transition-colors mt-4"
           >
             Lihat Detail
-          </button>
+          </Link>
         </div>
       </div>
     </div>
